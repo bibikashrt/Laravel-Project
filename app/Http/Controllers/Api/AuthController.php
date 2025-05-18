@@ -24,6 +24,7 @@ public function register(Request $request)
         'password'=> 'required',
     ]);
 
+
     $existinguser = User::where('email',$request->email)->exists();
 
     if($existinguser){
@@ -37,5 +38,8 @@ public function register(Request $request)
         'message'=> 'user created successfully!',
     ]);
 
+}
+public function logout(Request $request){
+    
 }
 }
