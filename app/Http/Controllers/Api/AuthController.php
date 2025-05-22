@@ -39,6 +39,7 @@ public function register(Request $request)
     ]);
 
 }
+    //This function is for logging out the user
 public function logout(Request $request){
     
 }
